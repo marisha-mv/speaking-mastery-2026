@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Speaking & Influence Summit 2026 — Free, Live on Zoom</title>
+<meta property="og:title" content="The Speaking & Influence Summit 2026 — Free, Live on Zoom, Jun 26–28">
+<meta property="og:description" content="Three free days to turn your voice into income, influence, and authority. Live with world-class speakers.">
+<meta property="og:url" content="https://www.mindvalley.com/summit/speak">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F3EA;--ink:#15140F;--ink-soft:#3A3830;--muted:#75736A;--faint:#A8A599;
+    --paper:#FFFFFF;--line:rgba(21,20,15,0.10);--line-soft:rgba(21,20,15,0.06);
+    --accent:#E8FF3E;--accent-deep:#7E8A00;--lav:#7E72D6;--lav-soft:#EDEAFB;--ink-deep:#100F0A;
+    --serif:'Fraunces',Georgia,serif;--sans:'Hanken Grotesk',-apple-system,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+  .serif{font-family:var(--serif)}
+  a{color:inherit}
+
+  /* top bar */
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(247,243,234,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar .row{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:-0.01em;display:flex;align-items:center;gap:9px}
+  .logo .v{width:26px;height:26px;border-radius:6px;background:var(--lav);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .mini-cd{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
+  .mini-cd b{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+  .btn{display:inline-block;background:var(--ink);color:var(--accent);font-weight:600;font-size:14px;padding:11px 22px;border-radius:999px;border:none;cursor:pointer;text-decoration:none;transition:transform .15s,background .2s}
+  .btn:hover{transform:translateY(-1px);background:var(--ink-deep)}
+  .btn.lg{font-size:16px;padding:16px 34px}
+
+  /* hero */
+  .hero{padding:64px 0 50px;position:relative;overflow:hidden}
+  .eyebrow{display:inline-block;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:var(--accent-deep);background:#FCFEEF;border:1px solid rgba(126,138,0,0.25);padding:7px 14px;border-radius:999px;margin-bottom:26px}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:58px;line-height:1.02;letter-spacing:-0.025em;max-width:14ch;margin-bottom:22px}
+  .hero h1 em{font-style:normal;background:linear-gradient(transparent 60%,var(--accent) 60%)}
+  .hero .sub{font-size:20px;line-height:1.55;color:var(--ink-soft);max-width:52ch;margin-bottom:34px}
+  .herogrid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:start}
+
+  /* form card */
+  .formcard{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px 28px;box-shadow:0 24px 60px -34px rgba(21,20,15,0.35)}
+  .formcard .cd{display:flex;gap:8px;margin-bottom:18px}
+  .cd-unit{flex:1;background:var(--ink);border-radius:11px;padding:11px 6px;text-align:center}
+  .cd-unit b{display:block;font-family:var(--serif);font-size:26px;font-weight:500;color:#F7F3EA;line-height:1;font-variant-numeric:tabular-nums}
+  .cd-unit span{display:block;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#9C998E;margin-top:5px}
+  .formcard h3{font-family:var(--serif);font-weight:500;font-size:21px;margin-bottom:4px;letter-spacing:-0.01em}
+  .formcard .scar{font-size:13px;color:var(--accent-deep);font-weight:600;margin-bottom:18px}
+  .fld{width:100%;font-family:var(--sans);font-size:15px;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--bg);color:var(--ink)}
+  .fld::placeholder{color:var(--faint)}
+  .formcard .btn{width:100%;text-align:center;margin-top:6px}
+  .consent{font-size:11px;color:var(--faint);line-height:1.4;margin-top:14px}
+
+  .trust{display:flex;gap:30px;margin-top:38px;flex-wrap:wrap}
+  .trust .ti{display:flex;flex-direction:column}
+  .trust .tn{font-family:var(--serif);font-size:26px;font-weight:500;line-height:1;letter-spacing:-0.01em}
+  .trust .tl{font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+
+  /* problem strip */
+  .problem{background:var(--ink);color:#EDEAE0;padding:46px 0;position:relative;overflow:hidden}
+  .problem::before{content:"";position:absolute;top:-60px;right:-40px;width:260px;height:260px;border-radius:50%;background:rgba(126,114,214,0.18);filter:blur(40px)}
+  .problem h2{font-family:var(--serif);font-weight:500;font-size:32px;line-height:1.2;letter-spacing:-0.02em;max-width:22ch;margin-bottom:14px;position:relative}
+  .problem h2 em{font-style:normal;color:var(--accent)}
+  .problem p{font-size:17px;line-height:1.6;color:#BFBCB2;max-width:60ch;position:relative}
+
+  /* section heading */
+  .sec{padding:64px 0}
+  .sec-kick{font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:var(--lav);margin-bottom:12px}
+  .sec h2{font-family:var(--serif);font-weight:500;font-size:40px;line-height:1.08;letter-spacing:-0.02em;margin-bottom:14px;max-width:20ch}
+  .sec .lead{font-size:18px;color:var(--ink-soft);max-width:60ch;margin-bottom:6px}
+  .disc{font-size:12px;color:var(--faint);margin-top:8px}
+
+  /* results cards */
+  .results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+  .rc{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px 22px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+  .rc:hover{transform:translateY(-4px);box-shadow:0 20px 44px -24px rgba(21,20,15,0.3)}
+  .rc .tag{align-self:flex-start;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;color:var(--accent-deep);background:#FCFEEF;border:1px solid rgba(126,138,0,0.22);padding:5px 11px;border-radius:999px;margin-bottom:16px}
+  .rc .quote{font-family:var(--serif);font-size:19px;line-height:1.32;font-weight:500;letter-spacing:-0.01em;margin-bottom:12px}
+  .rc .out{font-size:14px;line-height:1.5;color:var(--muted);margin-bottom:20px;flex:1}
+  .rc .who{display:flex;align-items:center;gap:11px;border-top:1px solid var(--line-soft);padding-top:15px}
+  .rc .av{width:38px;height:38px;border-radius:50%;background:var(--lav-soft);color:var(--lav);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;flex-shrink:0}
+  .rc .nm{font-size:14px;font-weight:600;line-height:1.2}
+  .rc .ro{font-size:12px;color:var(--faint)}
+  .more{text-align:center;margin-top:28px;font-size:14px;color:var(--muted)}
+
+  /* speakers */
+  .spk-sec{background:var(--lav-soft)}
+  .speakers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+  .sp{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+  .sp .ini{width:46px;height:46px;border-radius:11px;background:var(--ink);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:18px;margin-bottom:15px}
+  .sp h4{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:-0.01em;margin-bottom:2px}
+  .sp .role{font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:10px}
+  .sp p{font-size:13.5px;line-height:1.5;color:var(--muted)}
+
+  /* walkaway */
+  .walk{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 30px;margin-top:34px}
+  .wk{display:flex;gap:14px;align-items:flex-start}
+  .wk .ck{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-top:2px}
+  .wk p{font-size:16px;line-height:1.45;color:var(--ink-soft)}
+  .wk p b{color:var(--ink);font-weight:600}
+
+  /* final cta */
+  .final{background:var(--ink);color:#F7F3EA;padding:66px 0;text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;bottom:-70px;left:50%;transform:translateX(-50%);width:420px;height:420px;border-radius:50%;background:rgba(232,255,62,0.10);filter:blur(50px)}
+  .final h2{font-family:var(--serif);font-weight:500;font-size:44px;line-height:1.08;letter-spacing:-0.02em;max-width:18ch;margin:0 auto 14px;position:relative}
+  .final p{font-size:18px;color:#BFBCB2;margin-bottom:26px;position:relative}
+  .final .cd{display:flex;gap:10px;justify-content:center;margin-bottom:30px;position:relative}
+  .final .cd-unit{min-width:74px;background:rgba(255,255,255,0.06)}
+  .final .btn{background:var(--accent);color:var(--ink);position:relative}
+  .final .btn:hover{background:#DEF52E}
+
+  footer{padding:34px 0;text-align:center;font-size:12px;color:var(--faint)}
+  footer .dis{max-width:70ch;margin:0 auto 14px;line-height:1.5}
+
+  @media(max-width:860px){
+    .herogrid{grid-template-columns:1fr;gap:32px}
+    .hero h1{font-size:42px}
+    .results,.speakers{grid-template-columns:1fr}
+    .walk{grid-template-columns:1fr}
+    .mini-cd{display:none}
+    .sec h2,.final h2{font-size:30px}
+    .problem h2{font-size:26px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap row">
+    <div class="logo"><span class="v">V</span>Mindvalley</div>
+    <div class="mini-cd">Summit starts in <b id="mini">00d 00h 00m</b></div>
+    <a href="#reserve" class="btn">Reserve free spot</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <span class="eyebrow">Mindvalley's 2nd annual free summit · Jun 26–28 · Live on Zoom</span>
+      <h1>Turn your voice into <em>income, influence, and authority.</em></h1>
+      <p class="sub">Three free days with world-class speakers. Learn to close on webinars, get booked and paid to speak, win the room, and become impossible to ignore — on stage, on camera, or in everyday conversation.</p>
+      <div class="trust">
+        <div class="ti"><span class="tn">150,000+</span><span class="tl">Past participants</span></div>
+        <div class="ti"><span class="tn">7 days</span><span class="tl">Of live training</span></div>
+        <div class="ti"><span class="tn">Jun 26–28</span><span class="tl">Live on Zoom · Free</span></div>
+      </div>
+    </div>
+
+    <div class="formcard" id="reserve">
+      <div class="cd">
+        <div class="cd-unit"><b id="d">00</b><span>Days</span></div>
+        <div class="cd-unit"><b id="h">00</b><span>Hrs</span></div>
+        <div class="cd-unit"><b id="m">00</b><span>Min</span></div>
+        <div class="cd-unit"><b id="s">00</b><span>Sec</span></div>
+      </div>
+      <h3>Reserve your free spot</h3>
+      <p class="scar">Registration closes when the summit begins — this happens once a year.</p>
+      <input class="fld" type="text" placeholder="First name" aria-label="First name">
+      <input class="fld" type="email" placeholder="Email address" aria-label="Email address">
+      <input class="fld" type="tel" placeholder="Phone (optional)" aria-label="Phone">
+      <button class="btn">Save my free seat →</button>
+      <p class="consent">By registering you agree to the Terms of Use & Privacy Policy, and to receiving email and WhatsApp/text messages about the event. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap">
+    <h2>The most expensive gap in your career isn't talent. It's <em>not being heard.</em></h2>
+    <p>Brilliant people lose income, clients, and opportunities every year — not because they lack ability, but because they can't make it land. They undersell their offers, freeze in the pitch, and watch more polished voices take the stage, the deal, and the recognition. Speaking is the multiplier on everything you already know.</p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-kick">Real students · real results</div>
+    <h2>Don't take our word for it. Take theirs.</h2>
+    <p class="lead">These are documented stories from Speaking &amp; Influence graduates — books published, stages won, sales unlocked, audiences moved.</p>
+    <p class="disc">Shared by graduates of Speaking &amp; Influence Mastery. Individual results vary.</p>
+
+    <div class="results">
+      <div class="rc">
+        <span class="tag">Published author</span>
+        <p class="quote">"Now I'm about to publish the book I've tried to write since 2008."</p>
+        <p class="out">After 17 years and a lifelong stutter, Patrick finished his book, <em>Unmesswithable</em> — and now helps others stop being their own best-kept secret.</p>
+        <div class="who"><div class="av">PM</div><div><div class="nm">Patrick Meniboon</div><div class="ro">Transformation Coach · Raleigh, USA</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">Best-selling author</span>
+        <p class="quote">"I'm not just a best-selling author — I'm a mentor to other women."</p>
+        <p class="out">Catherine led 22 women to become best-selling authors and hosted a 6-hour live book launch where 75+ people stayed start to finish.</p>
+        <div class="who"><div class="av">CK</div><div><div class="nm">Catherine Kinsley</div><div class="ro">Coach · Floral Park, USA</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">Spoke to 1,400</span>
+        <p class="quote">"The feedback was overwhelming."</p>
+        <p class="out">After an unexpected career end, Simone was interviewed on stage in Los Angeles in front of 1,400 high-profile entrepreneurs.</p>
+        <div class="who"><div class="av">SM</div><div><div class="nm">Simone Mauri</div><div class="ro">Security Analyst · Zurich, CH</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">Sales unlocked</span>
+        <p class="quote">"I can sell, influence, and communicate at the level my work deserves."</p>
+        <p class="out">An entrepreneur whose biggest gap was sales, Marton dissolved a 25-year block and now sells and creates content without fear.</p>
+        <div class="who"><div class="av">MG</div><div><div class="nm">Marton Gaspar</div><div class="ro">Leadership Coach · London, UK</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">Booked to speak</span>
+        <p class="quote">"I flew to Africa to speak at a business retreat."</p>
+        <p class="out">In two weeks alone, Jenny was booked to speak at a business retreat in Africa and delivered a 6-hour masterclass.</p>
+        <div class="who"><div class="av">JE</div><div><div class="nm">Jenny</div><div class="ro">Transformation Coach · Kelowna, CA</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">90% rated 5/5</span>
+        <p class="quote">"From silenced to stage."</p>
+        <p class="out">A senior RAF Wing Commander, Jacqui delivered a talk to ~500 people in UK Defence — and over 90% rated it a perfect 5 out of 5.</p>
+        <div class="who"><div class="av">JW</div><div><div class="nm">Jacqui Wilkinson</div><div class="ro">Wing Commander & Coach · Oxford, UK</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">Investor-ready</span>
+        <p class="quote">"I can share my story on stage, in fundraising, and with clients."</p>
+        <p class="out">A healthcare and longevity entrepreneur, Emilian can now tell his origin story in a way that lands with audiences, investors, and his team.</p>
+        <div class="who"><div class="av">EP</div><div><div class="nm">Emilian Popa</div><div class="ro">Entrepreneur · London, UK</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">National stage</span>
+        <p class="quote">"I was invited to speak to Fortune 500 leaders."</p>
+        <p class="out">Gwen was invited to speak on a national stage to Fortune 500 supply-chain leaders about AI — a room she never imagined commanding.</p>
+        <div class="who"><div class="av">GM</div><div><div class="nm">Gwen Mitchell</div><div class="ro">Business Consultant · Houston, USA</div></div></div>
+      </div>
+
+      <div class="rc">
+        <span class="tag">First keynotes</span>
+        <p class="quote">"I delivered my first two keynotes — freely, with no notes."</p>
+        <p class="out">An experienced CEO, Dorothee finally delivered keynote speeches without slides or notes, speaking from presence instead of memory.</p>
+        <div class="who"><div class="av">DF</div><div><div class="nm">Dorothee Fischer</div><div class="ro">CEO · Valencia, ES</div></div></div>
+      </div>
+    </div>
+    <p class="more">…and 60+ more documented graduate stories on Mindvalley Stories.</p>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section class="sec spk-sec">
+  <div class="wrap">
+    <div class="sec-kick">Your faculty</div>
+    <h2>Learn from people who built empires with their voice.</h2>
+    <p class="lead">A powerhouse lineup of world-class communicators, each teaching a different edge of speaking and influence.</p>
+
+    <div class="speakers">
+      <div class="sp"><div class="ini">VL</div><h4>Vishen Lakhiani</h4><div class="role">Founder, Mindvalley</div><p>Built a $100M company on storytelling, social, and AI — with 50M+ views. On reshaping branding and content with AI.</p></div>
+      <div class="sp"><div class="ini">EE</div><h4>Eric Edmeades</h4><div class="role">Speaker & storytelling expert</div><p>Decades speaking in 25+ countries. His proprietary frameworks for storytelling, stagecraft, and owning any room.</p></div>
+      <div class="sp"><div class="ini">DP</div><h4>Daniel Priestley</h4><div class="role">Entrepreneur & author</div><p>How to monetize your influence, package your IP, and get paid to speak as a thought leader or entrepreneur.</p></div>
+      <div class="sp"><div class="ini">SZ</div><h4>Shadé Zahrai</h4><div class="role">Influence & charisma</div><p>Communicating with charisma and clarity in the digital world — from reels and interviews to Zoom and webinars.</p></div>
+      <div class="sp"><div class="ini">LC</div><h4>Linda Clemons</h4><div class="role">Body language expert</div><p>Command the room before you say a word, using body-language mastery techniques trusted by Fortune 500 leaders.</p></div>
+      <div class="sp"><div class="ini">KC</div><h4>Kwame Christian</h4><div class="role">Negotiation expert</div><p>Speak with empathy, assertiveness, and negotiation confidence using his "Compassionate Curiosity" method.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WALKAWAY -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-kick">In three days</div>
+    <h2>What you'll walk away with.</h2>
+    <div class="walk">
+      <div class="wk"><span class="ck">✓</span><p><b>A signature-talk framework</b> you can deliver without notes or slides.</p></div>
+      <div class="wk"><span class="ck">✓</span><p><b>The skill to hold a room's attention</b> from the first line to the last.</p></div>
+      <div class="wk"><span class="ck">✓</span><p><b>How to sell and persuade</b> without ever feeling "salesy."</p></div>
+      <div class="wk"><span class="ck">✓</span><p><b>Confidence on camera, on stage, and on webinars</b> — wherever you speak.</p></div>
+      <div class="wk"><span class="ck">✓</span><p><b>Eric's storytelling tools</b> — the Speech Map and Story Map — to structure talks that land.</p></div>
+      <div class="wk"><span class="ck">✓</span><p><b>A clear path</b> to turn your voice into income, authority, and influence.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="join">
+  <div class="wrap">
+    <h2>Your voice is your most valuable asset. It's time it paid you.</h2>
+    <p>Free · Live on Zoom · June 26–28, 2026</p>
+    <div class="cd">
+      <div class="cd-unit"><b id="d2">00</b><span>Days</span></div>
+      <div class="cd-unit"><b id="h2">00</b><span>Hrs</span></div>
+      <div class="cd-unit"><b id="m2">00</b><span>Min</span></div>
+      <div class="cd-unit"><b id="s2">00</b><span>Sec</span></div>
+    </div>
+    <a href="#reserve" class="btn lg">Reserve my free spot →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="dis">Testimonials reflect individual experiences shared by graduates of Speaking &amp; Influence Mastery. They are not a guarantee of results; individual outcomes vary based on effort, background, and circumstances.</p>
+    <p>© 2026 Mindvalley, Inc. · Terms · Privacy</p>
+  </div>
+</footer>
+
+<script>
+  const target = new Date("2026-06-26T09:00:00-04:00").getTime();
+  function pad(n){return String(n).padStart(2,'0')}
+  function tick(){
+    let diff = Math.max(0, target - Date.now());
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor(diff%86400000/3600000);
+    const m = Math.floor(diff%3600000/60000);
+    const s = Math.floor(diff%60000/1000);
+    ['d','d2'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=pad(d)});
+    ['h','h2'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=pad(h)});
+    ['m','m2'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=pad(m)});
+    ['s','s2'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=pad(s)});
+    const mini=document.getElementById('mini');if(mini)mini.textContent=pad(d)+'d '+pad(h)+'h '+pad(m)+'m';
+  }
+  tick(); setInterval(tick,1000);
+</script>
+</body>
+</html>
