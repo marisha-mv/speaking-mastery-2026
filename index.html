@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Speaking & Influence Summit 2026 — Launch Messaging</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F3EA;--ink:#15140F;--ink-soft:#3A3830;--muted:#75736A;--faint:#A8A599;
+    --paper:#FFFFFF;--line:rgba(21,20,15,0.10);--line-soft:rgba(21,20,15,0.06);
+    --accent:#E8FF3E;--accent-deep:#8A9600;--lav:#7E72D6;--lav-soft:#EDEAFB;--rail:#15140F;
+    --serif:'Fraunces',Georgia,serif;--sans:'Hanken Grotesk',-apple-system,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .shell{display:grid;grid-template-columns:296px 1fr;min-height:100vh}
+
+  .rail{background:var(--rail);color:#E9E6DC;padding:40px 30px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:54px}
+  .vmark{width:30px;height:30px;border-radius:7px;background:var(--lav);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:17px;color:#fff;flex-shrink:0}
+  .brand-txt{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9C998E;line-height:1.4}
+  .brand-txt b{display:block;color:#F7F3EA;font-weight:500;letter-spacing:0.02em;text-transform:none;font-size:13px}
+  .eyebrow{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6E6B61;margin-bottom:18px}
+  .tabs{display:flex;flex-direction:column;gap:4px}
+  .tab{background:none;border:none;cursor:pointer;font-family:var(--sans);text-align:left;color:#7E7B71;padding:15px 16px;border-radius:11px;display:flex;align-items:baseline;gap:12px;transition:all .25s ease;width:100%}
+  .tab:hover{color:#E9E6DC;background:rgba(255,255,255,0.03)}
+  .tab .num{font-family:var(--serif);font-size:13px;color:#56544B;transition:color .25s}
+  .tab .lbl{font-size:16px;font-weight:500;letter-spacing:-0.01em}
+  .tab.active{background:rgba(232,255,62,0.07);color:#fff}
+  .tab.active .num{color:var(--accent)}
+  .tab.active .lbl{color:#fff}
+  .rail-foot{margin-top:auto;font-size:11.5px;line-height:1.6;color:#5F5D54;border-top:1px solid rgba(255,255,255,0.07);padding-top:18px}
+  .rail-foot b{color:#8C8A80;font-weight:500}
+
+  .content{padding:64px 80px 100px;max-width:920px}
+  .panel{display:none;animation:rise .5s ease both}
+  .panel.active{display:block}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .stagger>*{opacity:0;animation:rise .55s ease forwards}
+  .stagger>*:nth-child(1){animation-delay:.05s}
+  .stagger>*:nth-child(2){animation-delay:.12s}
+  .stagger>*:nth-child(3){animation-delay:.19s}
+  .stagger>*:nth-child(4){animation-delay:.26s}
+  .stagger>*:nth-child(5){animation-delay:.33s}
+  .stagger>*:nth-child(6){animation-delay:.40s}
+  .stagger>*:nth-child(7){animation-delay:.47s}
+
+  .kicker{font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:14px}
+  h1{font-family:var(--serif);font-weight:500;font-size:44px;line-height:1.06;letter-spacing:-0.02em;margin-bottom:14px;max-width:18ch}
+  .meta{font-size:14px;color:var(--faint);margin-bottom:22px;letter-spacing:0.01em}
+  .lede{font-size:19px;line-height:1.6;color:var(--ink-soft);max-width:64ch;margin-bottom:44px}
+  .lede .hl{background:linear-gradient(transparent 62%,var(--accent) 62%);padding:0 2px}
+
+  .secttl{font-family:var(--serif);font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 18px;display:flex;align-items:center;gap:12px}
+  .secttl::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  .core{background:var(--ink);color:#EDEAE0;border-radius:18px;padding:34px 36px;margin-bottom:48px;position:relative;overflow:hidden}
+  .core::before{content:"";position:absolute;top:-40px;right:-30px;width:160px;height:160px;border-radius:50%;background:rgba(126,114,214,0.22);filter:blur(20px)}
+  .core .lab{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px;position:relative}
+  .core p{font-family:var(--serif);font-size:24px;line-height:1.42;font-weight:400;position:relative;max-width:32ch}
+  .core p em{font-style:normal;color:var(--accent)}
+
+  .goals{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+  .goal{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 20px;transition:transform .25s,box-shadow .25s}
+  .goal:hover{transform:translateY(-3px);box-shadow:0 14px 34px -18px rgba(21,20,15,.3)}
+  .goal.lead{border:1.5px solid var(--accent-deep);background:#FCFEEF}
+  .goal .badge{display:inline-block;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:8px;min-height:12px}
+  .goal .pct{font-family:var(--serif);font-size:32px;font-weight:500;letter-spacing:-0.02em;line-height:1;margin-bottom:10px}
+  .goal .pct span{font-size:16px;color:var(--faint)}
+  .goal h4{font-size:15px;font-weight:600;margin-bottom:6px;letter-spacing:-0.01em}
+  .goal p{font-size:13px;line-height:1.5;color:var(--muted)}
+  .insight{background:var(--lav-soft);border-radius:14px;padding:22px 28px;margin-bottom:48px;font-size:15.5px;line-height:1.65;color:var(--ink-soft)}
+  .insight b{color:var(--ink);font-weight:600}
+  .insight .big{color:var(--lav);font-weight:600}
+
+  .wants{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:48px}
+  .chip{font-size:14px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 16px;color:var(--ink-soft);transition:all .2s}
+  .chip:hover{border-color:var(--accent-deep);background:#FCFEEF}
+  .chip i{font-style:normal;color:var(--faint);font-weight:500;margin-left:5px}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:15px;overflow:hidden;margin-bottom:48px}
+  .stat{background:var(--bg);padding:22px 20px}
+  .stat .n{font-family:var(--serif);font-size:34px;font-weight:500;line-height:1;letter-spacing:-0.02em;margin-bottom:8px}
+  .stat .n .pct{font-size:18px;color:var(--faint)}
+  .stat .d{font-size:12.5px;line-height:1.45;color:var(--muted)}
+
+  .notfor{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:26px 30px}
+  .notfor .lab{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#C0392B;font-weight:600;margin-bottom:16px}
+  .notfor .item{font-size:14.5px;line-height:1.55;color:var(--ink-soft);padding:9px 0;border-bottom:1px solid var(--line-soft);display:flex;gap:12px}
+  .notfor .item:last-child{border:none;padding-bottom:0}
+  .notfor .item:first-of-type{padding-top:0}
+  .notfor .item span{color:var(--faint);font-family:var(--serif)}
+
+  .funnel{display:flex;align-items:stretch;gap:0;margin-bottom:44px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .fstep{flex:1;padding:18px 22px;background:var(--paper)}
+  .fstep.paid{background:#FCFEEF}
+  .fstep .fn{font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);font-weight:600;margin-bottom:6px}
+  .fstep .ft{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+  .fstep .fd{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .farrow{display:flex;align-items:center;justify-content:center;width:42px;background:var(--bg);color:var(--lav);font-size:18px;flex-shrink:0}
+
+  .spine{display:flex;gap:16px;align-items:flex-start;background:var(--lav-soft);border-radius:15px;padding:24px 28px;margin-bottom:48px}
+  .spine .mk{font-family:var(--serif);font-size:30px;color:var(--lav);line-height:1;flex-shrink:0}
+  .spine p{font-size:16px;line-height:1.6;color:var(--ink-soft)}
+  .spine b{color:var(--ink);font-weight:600}
+
+  .hero-msg{background:var(--ink);color:#F7F3EA;border-radius:20px;padding:46px 48px;margin-bottom:18px;position:relative;overflow:hidden}
+  .hero-msg::before{content:"";position:absolute;bottom:-50px;left:-30px;width:220px;height:220px;border-radius:50%;background:rgba(232,255,62,0.10);filter:blur(30px)}
+  .hero-msg .tag{display:inline-block;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);background:var(--accent);font-weight:600;padding:5px 12px;border-radius:6px;margin-bottom:22px;position:relative}
+  .hero-msg h2{font-family:var(--serif);font-weight:500;font-size:40px;line-height:1.12;letter-spacing:-0.02em;margin-bottom:20px;position:relative;max-width:18ch}
+  .hero-msg .sub{font-size:17px;line-height:1.6;color:#C8C5BB;max-width:56ch;position:relative}
+  .hero-msg .sub b{color:var(--accent);font-weight:500}
+
+  .alts-h{font-family:var(--serif);font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 6px}
+  .alts-sub{font-size:14px;color:var(--muted);margin-bottom:20px}
+  .alts{display:flex;flex-direction:column;gap:12px;margin-bottom:48px}
+  .alt{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 24px;display:flex;gap:20px;align-items:center;transition:all .22s}
+  .alt:hover{border-color:var(--lav);transform:translateX(4px)}
+  .alt .ang{flex-shrink:0;width:118px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--lav);font-weight:600;line-height:1.4}
+  .alt .ms{font-family:var(--serif);font-size:21px;font-weight:400;line-height:1.25;color:var(--ink);letter-spacing:-0.01em}
+
+  .arc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:48px}
+  .day{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+  .day .dn{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:12px}
+  .day h4{font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:10px;letter-spacing:-0.01em;line-height:1.25}
+  .day p{font-size:13.5px;line-height:1.55;color:var(--muted);margin-bottom:14px}
+  .day .job{font-size:11.5px;line-height:1.4;color:var(--accent-deep);font-weight:600;border-top:1px solid var(--line-soft);padding-top:11px}
+
+  .decision{background:#FCFBF4;border:1px solid var(--accent-deep);border-left:4px solid var(--accent-deep);border-radius:0 14px 14px 0;padding:26px 30px}
+  .decision .lab{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:12px}
+  .decision p{font-size:15px;line-height:1.65;color:var(--ink-soft)}
+  .decision p b{color:var(--ink);font-weight:600}
+
+  /* landing page tab */
+  .lp-intro{font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:62ch;margin-bottom:14px}
+  .lp-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .lp-chip{font-size:12.5px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--ink-soft)}
+  .lp-chip b{color:var(--accent-deep);font-weight:600}
+  .browser{border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 24px 60px -34px rgba(21,20,15,0.4);background:var(--paper);margin-bottom:22px}
+  .browser .bar{display:flex;align-items:center;gap:7px;padding:11px 15px;background:#EDE9DF;border-bottom:1px solid var(--line)}
+  .browser .dot{width:11px;height:11px;border-radius:50%}
+  .browser .url{flex:1;margin-left:10px;font-size:12px;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:5px 12px;font-family:var(--sans)}
+  .browser iframe{width:100%;height:560px;border:0;display:block;background:var(--bg)}
+  .lp-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .lp-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--accent);font-weight:600;font-size:15px;padding:14px 26px;border-radius:999px;text-decoration:none;transition:transform .15s,background .2s}
+  .lp-btn:hover{transform:translateY(-1px);background:#100F0A}
+  .lp-note{font-size:13px;color:var(--faint)}
+
+  @media(max-width:900px){
+    .shell{grid-template-columns:1fr}
+    .rail{position:static;height:auto;flex-direction:row;align-items:center;padding:20px 24px;gap:24px}
+    .brand{margin:0}.eyebrow,.rail-foot{display:none}
+    .tabs{flex-direction:row;gap:8px}
+    .content{padding:40px 28px 80px}
+    h1{font-size:32px}
+    .goals{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .hero-msg h2{font-size:30px}
+    .alt{flex-direction:column;align-items:flex-start;gap:8px}.alt .ang{width:auto}
+    .arc{grid-template-columns:1fr}
+    .funnel{flex-direction:column}.farrow{width:auto;height:36px;transform:rotate(90deg)}
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <aside class="rail">
+    <div class="brand">
+      <div class="vmark">V</div>
+      <div class="brand-txt">Mindvalley<b>Speaking &amp; Influence &rsquo;26</b></div>
+    </div>
+    <div class="eyebrow">Summit launch foundation</div>
+    <nav class="tabs">
+      <button class="tab active" data-panel="audience"><span class="num">01</span><span class="lbl">Audience</span></button>
+      <button class="tab" data-panel="message"><span class="num">02</span><span class="lbl">Summit message</span></button>
+      <button class="tab" data-panel="landing"><span class="num">03</span><span class="lbl">Landing page</span></button>
+    </nav>
+    <div class="rail-foot">
+      <b>Source</b><br>2025 cohort review &middot; 492 students &middot; 2,315 feedback submissions &middot; 160 onboarding surveys.
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <!-- ================= AUDIENCE ================= -->
+    <section class="panel active" id="audience">
+      <div class="stagger">
+        <div>
+          <div class="kicker">Who we're speaking to</div>
+          <h1>She can speak. She can't reliably move people.</h1>
+          <div class="meta">80% female &middot; 81% are 45+ &middot; 67% already speak publicly &middot; 84% are repeat Mindvalley customers</div>
+          <p class="lede">This is not a beginner and not someone afraid of the stage &mdash; two-thirds already speak at least occasionally. What she's missing is the skill that turns being heard into <span class="hl">getting the result</span>: the close, the booking, the buy-in, the room leaning in.</p>
+        </div>
+
+        <div class="core">
+          <div class="lab">The truth that's true for all of them</div>
+          <p>She doesn't have a visibility problem or a courage problem. She has an <em>influence</em> problem &mdash; her attention isn't converting into action.</p>
+        </div>
+
+        <div>
+          <div class="secttl">Why they actually came &mdash; their single most important goal</div>
+          <div class="goals">
+            <div class="goal lead">
+              <span class="badge">Largest goal</span>
+              <div class="pct">32<span>%</span></div>
+              <h4>Get paid to speak</h4>
+              <p>Booked, paid, selling from the stage &mdash; speaking as income.</p>
+            </div>
+            <div class="goal">
+              <span class="badge">&nbsp;</span>
+              <div class="pct">23<span>%</span></div>
+              <h4>A voice with authority</h4>
+              <p>To be taken seriously and speak with command and presence.</p>
+            </div>
+            <div class="goal">
+              <span class="badge">&nbsp;</span>
+              <div class="pct">16<span>%</span></div>
+              <h4>Attract clients &amp; followers</h4>
+              <p>Speaking that fills programs and grows the business.</p>
+            </div>
+            <div class="goal">
+              <span class="badge">&nbsp;</span>
+              <div class="pct">14<span>%</span></div>
+              <h4>Influence through content</h4>
+              <p>Reach and impact &mdash; build an audience, move people at scale.</p>
+            </div>
+          </div>
+          <div class="insight">
+            Read the goals together: paid speaker + clients + content = <span class="big">62%</span> walked in for influence and conversion outcomes. Another <b>23%</b> want authority and a powerful voice. Only <b>3%</b> came to overcome fear &mdash; so we lead with outcome and influence, and never with &ldquo;conquer your fear of public speaking.&rdquo;
+          </div>
+        </div>
+
+        <div>
+          <div class="secttl">What they want to master &mdash; ranked, multi-select</div>
+          <div class="wants">
+            <span class="chip">Unforgettable stage talks <i>91%</i></span>
+            <span class="chip">Hold attention the whole time <i>86%</i></span>
+            <span class="chip">Authority &amp; confidence on command <i>78%</i></span>
+            <span class="chip">Viral / impactful content <i>76%</i></span>
+            <span class="chip">Talks without notes <i>74%</i></span>
+            <span class="chip">Persuade in business &amp; leadership <i>72%</i></span>
+            <span class="chip">Sell from stage or camera <i>63%</i></span>
+            <span class="chip">Host webinars &amp; virtual events <i>63%</i></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="secttl">The data spine</div>
+          <div class="stats">
+            <div class="stat"><div class="n">73<span class="pct">%</span></div><div class="d">name selling / conversion their #1 weakness</div></div>
+            <div class="stat"><div class="n">62<span class="pct">%</span></div><div class="d">joined for influence &amp; conversion outcomes</div></div>
+            <div class="stat"><div class="n">91<span class="pct">%</span></div><div class="d">want to craft unforgettable stage talks</div></div>
+            <div class="stat"><div class="n">81<span class="pct">%</span></div><div class="d">are 45+ &middot; seasoned, not beginners</div></div>
+            <div class="stat"><div class="n">67<span class="pct">%</span></div><div class="d">already speak publicly at least occasionally</div></div>
+            <div class="stat"><div class="n">84<span class="pct">%</span></div><div class="d">are repeat MV customers &mdash; a cross-sell</div></div>
+            <div class="stat"><div class="n">16<span class="pct">%</span></div><div class="d">came from Manifesting Mastery (top feeder)</div></div>
+            <div class="stat"><div class="n">3<span class="pct">%</span></div><div class="d">joined to overcome fear &mdash; not the angle</div></div>
+          </div>
+        </div>
+
+        <div class="notfor">
+          <div class="lab">Who this is NOT for &mdash; naming it sharpens the promise</div>
+          <div class="item"><span>&mdash;</span>The terrified beginner trying to overcome stage fright (only 3% came for this).</div>
+          <div class="item"><span>&mdash;</span>The hobbyist chasing the keynote circuit as an end in itself.</div>
+          <div class="item"><span>&mdash;</span>Anyone who wants a performance skill with no outcome attached to it.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUMMIT MESSAGE ================= -->
+    <section class="panel" id="message">
+      <div class="stagger">
+        <div>
+          <div class="kicker">The summit message</div>
+          <h1>The summit sells belief. The Mastery sells the system.</h1>
+          <p class="lede">The free 3-day summit's job is not to teach everything &mdash; it's to make her believe she can move a room, give her one real taste of it, and reveal the gap only the Mastery closes. We sell the <span class="hl">transformation she can feel in three days</span>; on Day 3 we sell the path to own it for life.</p>
+        </div>
+
+        <div class="funnel">
+          <div class="fstep"><div class="fn">Stage 1 &middot; Free</div><div class="ft">3-day summit</div><div class="fd">Belief + one real taste of moving a room</div></div>
+          <div class="farrow">&rarr;</div>
+          <div class="fstep"><div class="fn">The pivot</div><div class="ft">Day 3 close</div><div class="fd">The gap is revealed, the offer is made</div></div>
+          <div class="farrow">&rarr;</div>
+          <div class="fstep paid"><div class="fn">Stage 2 &middot; Paid</div><div class="ft">The Mastery</div><div class="fd">The 5-month system &mdash; and the monetization</div></div>
+        </div>
+
+        <div class="spine">
+          <div class="mk">&ldquo;</div>
+          <p>The spine: <b>influence is the skill that turns attention into action</b> &mdash; listen, believe, act. The summit's only job is to make her <i>feel</i> that arc is possible for her, in three days. Everything we sell at the summit serves that feeling, because belief is what makes the Day 3 offer land.</p>
+        </div>
+
+        <div class="hero-msg">
+          <span class="tag">Recommended summit promise</span>
+          <h2>Make any room listen, believe, and act &mdash; in three days.</h2>
+          <p class="sub">The free, live Speaking &amp; Influence Summit. Walk away with a real taste of the one skill that turns attention into action &mdash; <b>and a clear path to making it yours for life.</b></p>
+        </div>
+
+        <div>
+          <div class="alts-h">Other summit headline directions</div>
+          <div class="alts-sub">Same spine, different pull. Pick the registration hook that feels most Mindvalley.</div>
+          <div class="alts">
+            <div class="alt"><div class="ang">Possibility</div><div class="ms">Find the voice that changes everything &mdash; in one weekend.</div></div>
+            <div class="alt"><div class="ang">Identity</div><div class="ms">Become impossible to ignore. Three days, live, free.</div></div>
+            <div class="alt"><div class="ang">Outcome /<br>curiosity</div><div class="ms">Discover the skill that makes people say yes.</div></div>
+            <div class="alt"><div class="ang">Authority /<br>insider</div><div class="ms">What the world's best speakers know that you don't.</div></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="secttl">The 3-day arc &mdash; how the message primes the close</div>
+          <div class="arc">
+            <div class="day">
+              <div class="dn">Day 1</div>
+              <h4>The awakening</h4>
+              <p>Your voice is your most valuable untapped asset. Show her what's holding her back isn't talent or nerve &mdash; it's the absence of an influence system. Reframe the problem so she feels the gap.</p>
+              <div class="job">Job: problem-awareness &middot; open the loop</div>
+            </div>
+            <div class="day">
+              <div class="dn">Day 2</div>
+              <h4>The taste</h4>
+              <p>Feel what it's like to move a room. Deliver one real framework and a first win &mdash; a piece of the One Talk, a persuasion principle she can use today. She thinks: I can actually do this.</p>
+              <div class="job">Job: build belief &middot; prove it's learnable</div>
+            </div>
+            <div class="day">
+              <div class="dn">Day 3</div>
+              <h4>The decision</h4>
+              <p>From a taste to a skill you own for life. A 3-day taste isn't mastery &mdash; and it isn't monetized. Reveal the full path, then make the offer. The close becomes the obvious next step.</p>
+              <div class="job">Job: reveal the gap &middot; close to the Mastery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="decision">
+          <div class="lab">The pivot &mdash; and the one rule that protects it</div>
+          <p>By Day 3 she's felt the skill is real and learnable, and that a taste isn't enough &mdash; that's what makes the offer land. The rule: the summit must deliver a genuine felt win, and the Mastery must actually rebuild the conversion content (Part 5 was the weakest module last year). <b>Over-promise at the summit and under-deliver in the Mastery, and we burn the warm list the whole launch depends on.</b></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LANDING PAGE ================= -->
+    <section class="panel" id="landing">
+      <div class="stagger">
+        <div>
+          <div class="kicker">The registration page</div>
+          <h1>Where the message becomes the page.</h1>
+          <p class="lp-intro">The redesigned summit opt-in page, rebuilt on the Value Equation: an income-led dream outcome, and a real results section infused with documented graduate stories pulled from Mindvalley Stories.</p>
+          <div class="lp-chips">
+            <span class="lp-chip"><b>Dream outcome</b> &middot; voice &rarr; income, influence, authority</span>
+            <span class="lp-chip"><b>Proof</b> &middot; 9 real graduate results</span>
+            <span class="lp-chip"><b>Faculty</b> &middot; fixed the "2+ speakers" gap</span>
+            <span class="lp-chip"><b>Live countdown</b> &middot; to Jun 26</span>
+            <span class="lp-chip"><b>Share tags</b> &middot; meta fixed</span>
+          </div>
+        </div>
+
+        <div class="browser">
+          <div class="bar">
+            <span class="dot" style="background:#E5564B"></span>
+            <span class="dot" style="background:#E8B931"></span>
+            <span class="dot" style="background:#3DBE5A"></span>
+            <span class="url">mindvalley.com/summit/speak</span>
+          </div>
+          <iframe src="speaking-summit-2026-landing.html" title="Speaking & Influence Summit 2026 registration page"></iframe>
+        </div>
+
+        <div class="lp-cta">
+          <a class="lp-btn" href="speaking-summit-2026-landing.html" target="_blank" rel="noopener">Open the full page &nearr;</a>
+          <span class="lp-note">Opens the live registration page in a new tab. Keep both files in the same folder so the preview loads.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  const tabs=document.querySelectorAll('.tab');
+  const panels=document.querySelectorAll('.panel');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.remove('active'));
+    panels.forEach(p=>p.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById(t.dataset.panel).classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }));
+</script>
+</body>
+</html>
